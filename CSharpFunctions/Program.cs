@@ -39,3 +39,9 @@ void StampaArrayInteri(int[] array)
 
     Console.WriteLine(stampaArray);
 }
+
+int Quadrato(int numero)
+{
+    double power = 2;
+    Console.WriteLine("Il quaderato di " + numero + " è: " + Math.Pow(numero, power));
+}
