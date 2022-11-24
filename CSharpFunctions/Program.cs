@@ -45,11 +45,11 @@ void StampaArrayInteri (int[] array)
         }
         else
         {
-            stampaArray+= array[i] + ", ";
+            stampaArray += array[i] + ", ";
         }
     }
 
-    stampaArray+= "]";
+    stampaArray += "]";
 
     Console.WriteLine(stampaArray);
 }
@@ -63,7 +63,7 @@ int Quadrato (int numero)
     return numeroQuadrato;
 }
 
-//prende un array di numeri interi, restituisce un nuovo array con tutti gli elementi elevati quadrato.
+//preso un array di numeri interi, restituisce un nuovo array con tutti gli elementi elevati quadrato.
 int[] ElevaArrayAlQuadrato (int[] array)
 {
     double power = 2;
