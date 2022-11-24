@@ -19,13 +19,15 @@
 
 //-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.- FUNZIONE -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
 
-void StampaArrayInteri(int[] array)
+//preso un array di numeri interi, stampa a video il contenuto dell’array in 
+//questa forma “[elemento 1, elemento 2, elemento 3, ...]”
+void StampaArrayInteri (int[] array)
 {
     string stampaArray = "[";
 
-    for(int i = 0; i < array.Length; i++)
+    for (int i = 0; i < array.Length; i++)
     {
-        if(i == array.Length - 1)
+        if (i == array.Length - 1)
         {
             stampaArray += array[i];
         }
@@ -40,13 +42,17 @@ void StampaArrayInteri(int[] array)
     Console.WriteLine(stampaArray);
 }
 
-int Quadrato(int numero)
+//preso un numero interto, restituisce un numero intero elevato al quadrato
+int Quadrato (int numero)
 {
     double power = 2;
-    Console.WriteLine("Il quaderato di " + numero + " è: " + Math.Pow(numero, power));
+    int numeroQuadrato = (int)Math.Pow(numero, power);
+
+    return numeroQuadrato;
 }
 
-int[] ElevaArrayAlQuadrato(int[] array)
+//prende un array di numeri interi, restituisce un nuovo array con tutti gli elementi elevati quadrato.
+int[] ElevaArrayAlQuadrato (int[] array)
 {
     double power = 2;
     int[] copiaArray = (int[])array.Clone();
@@ -56,4 +62,17 @@ int[] ElevaArrayAlQuadrato(int[] array)
     }
 
     return copiaArray;
+}
+
+
+//preso un array di numeri interi, restituisce la somma totale di tutti gli elementi dell’array
+int SommaElementiArray(int[] array)
+{
+    int somma = 0;
+    foreach (int numero in array)
+    {
+        somma += numero;
+    }
+
+    return somma;   
 }
