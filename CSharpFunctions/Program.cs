@@ -1,14 +1,26 @@
 ﻿//-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.- CODICE PRINCIPALE -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+int[] arrayDiNumeri = { 2, 6, 7, 5, 3, 9 };
 
+Console.WriteLine("Stampo l'array: ");
+StampaArrayInteri(arrayDiNumeri);
+Console.WriteLine("-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-\n");
 
+Console.WriteLine("Stampo l'array elevato al quadrato: ");
+int[] arrayDiNumeriAlQuadrato = ElevaArrayAlQuadrato(arrayDiNumeri);
+StampaArrayInteri(arrayDiNumeriAlQuadrato);
+Console.WriteLine("Stampo l'array originale: ");
+StampaArrayInteri(arrayDiNumeri);
+Console.WriteLine("-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-\n");
 
+Console.Write("Stampo la somma degli elementi dell'array originale: ");
+int sommaElementiArray = SommaElementiArray(arrayDiNumeri);
+Console.WriteLine(sommaElementiArray);
+Console.WriteLine("-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-\n");
 
-
-
-
-
-
-
+Console.Write("Stampo la somma degli elementi dell'array elevato a quadrato: ");
+int sommaElementiArrayQuadrato = SommaElementiArray(arrayDiNumeriAlQuadrato);
+Console.WriteLine(sommaElementiArrayQuadrato);
+Console.WriteLine("-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-\n");
 
 
 
