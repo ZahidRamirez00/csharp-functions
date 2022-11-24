@@ -45,3 +45,15 @@ int Quadrato(int numero)
     double power = 2;
     Console.WriteLine("Il quaderato di " + numero + " è: " + Math.Pow(numero, power));
 }
+
+int[] ElevaArrayAlQuadrato(int[] array)
+{
+    double power = 2;
+    int[] copiaArray = (int[])array.Clone();
+    for (int i = 0; i < copiaArray.Length; i++)
+    {
+        copiaArray[i] = (int)Math.Pow(copiaArray[i], power);
+    }
+
+    return copiaArray;
+}
