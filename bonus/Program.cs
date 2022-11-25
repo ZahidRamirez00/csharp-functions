@@ -118,7 +118,7 @@ int[] ElevaArrayAlQuadrato(int[] array)
     int[] copiaArray = (int[])array.Clone();
     for (int i = 0; i < copiaArray.Length; i++)
     {
-        copiaArray[i] = (int)Math.Pow(copiaArray[i], power);
+        copiaArray[i] = Quadrato(copiaArray[i]);
     }
 
     return copiaArray;
